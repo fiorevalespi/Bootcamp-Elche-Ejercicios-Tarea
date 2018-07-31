@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    
+    <head> 
+        
+        <meta charset="UTF-8">
+        
+        <title> Funcion Grados </title>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Convertidor de Grados Celsius a Grados Fahrenheit</h1>
+        
+        <p>Inserta los grados Celsius que quieras transformar</p>
+        
+        <input type ="number" id="gradosC" name="gradosC">
+                
+        <button onclick="gradoCelsius()"> Calcular </button>
+        
+        <script>
+            
+            function gradoCelsius(){
+                var x= document.getElementById("gradosC").value *  9 / 5 + 32;
+                alert ("Son aproximadamente " + Math.round(x) + " grados Fahrenheit")
+            }
+            
+                    
+        </script>
+              
+    </body>
+
+</html>

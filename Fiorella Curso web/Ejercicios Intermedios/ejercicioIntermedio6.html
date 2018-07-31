@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">    
+
+        <title>Ejercicio Intermedio</title>
+  
+    </head>
+
+    <body>
+
+        <h1>Crea una frase</h1>
+    
+        <p>Coloca las palabras indicadas en los espacios en blanco</p>
+    
+        <table>
+        
+            <tr>
+        
+                <td>sustantivo</td>
+                <td>adjetivo</td>
+                <td>adverbio</td>
+                <td>verbo</td>
+        
+            </tr>
+        
+            <tr>
+        
+                <td><input type="text" name="sustantivo" id="sustantivo"></td>
+                <td><input type="text" name="adjetivo" id="adjetivo"></td>
+                <td><input type="text" name="adverbio" id="adverbio"></td>
+                <td><input type="text" name="verbo" id="verbo"></td>
+        
+            </tr>        
+        
+        </table>
+    
+        <p id="frase"></p>
+     
+        <button onclick="frase()">Crear Frase</button>
+        
+        <script>
+    
+            function frase(){
+        
+                var sus = document.getElementById("sustantivo").value;
+                var adj = document.getElementById("adjetivo").value;
+                var adv = document.getElementById("adverbio").value;
+                var verbo = document.getElementById("verbo").value;
+                
+                document.getElementById("frase").innerHTML = "Ayer sali a " + verbo + " " + adv + " con mi " + sus + " que es muy " + adj + ", la gente no lo entiende, pero no nos importa."
+            
+            }
+        
+        </script>
+    
+    </body>
+
+</html>

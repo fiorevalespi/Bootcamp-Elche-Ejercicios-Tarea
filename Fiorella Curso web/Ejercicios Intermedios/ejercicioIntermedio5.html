@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+
+	<meta charset="utf-8">
+    
+    <script>
+        
+        function primo(){
+            
+            var valor= parseInt(document.getElementById("valor").value);
+            var numeroPrimo= true;
+            
+            for(i=1;i<valor;i++){
+                
+                if(valor/i == Math.round(valor/i) && i!=1 && i!=valor){
+                    
+                    numeroPrimo=false;
+                    
+                    break;
+                
+                };
+            
+            };
+            
+            if(numeroPrimo)
+                
+                document.getElementById("resultado").innerHTML="El numero es primo";
+            
+            else
+                
+                document.getElementById("resultado").innerHTML="El numero no es primo";
+        
+        }
+        
+        </script>
+    
+    </head>
+    
+    <body>
+        
+        <h1>Determinar si un numero es primo</h1>
+        
+        <input type="text" id="valor" value="">
+        
+        <input type="button" onclick="primo()" value="Comprobar">
+        
+        <div id="resultado"></div>
+    
+    </body>
+
+</html>

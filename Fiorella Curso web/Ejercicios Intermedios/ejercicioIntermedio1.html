@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+    
+             <meta charset="UTF-8">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Numero Random</h1>
+        
+        <p>Introduce un numero entre 1 y 10:</p>
+        
+        <input id="numb">
+                
+        <button type="button" onclick="myFunction()"> Intentalo </button>
+        
+        <p id="demo"></p>
+                
+        <script>
+            
+            function myFunction(){
+                var x, text;
+                var y= Math.floor(Math.random()*10)+1;
+                
+                
+                x= document.getElementById("numb").value;
+                
+                if (isNaN(x) || x < 1 || x > 10) {
+
+                    text = "No es una entrada valida";
+                } else if (x==y) {
+                    text = "Has acertado"
+                } else {
+                text="No has acertado"
+                }
+                
+                document.getElementById("demo").innerHTML = text + " el numero generado es " + y + " . " ;
+            }
+            
+          
+        </script>
+
+    </body>
+    
+</html>

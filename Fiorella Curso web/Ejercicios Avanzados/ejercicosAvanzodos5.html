@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <head> 
+        
+        <meta charset="UTF-8">
+        
+        <title>Ejercicio Avanzado</title>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Hermanos Lopez</h1>
+        
+        <table border="1">
+            
+            <tr>
+                
+                <td> Nombre y Apelllido </td>
+                <td> Edad </td>
+                <td> Estado Civil </td>
+            
+            </tr>
+            
+            <tr>
+                
+                <td id=persom></td>
+                <td id=edad></td>
+                <td id=civil></td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td id=persom2></td>
+                <td id=edad2></td>
+                <td id=civil2></td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td id=persom3></td>
+                <td id=edad3></td>
+                <td id=civil3></td>
+                
+            </tr>
+        
+        </table>
+        
+        
+        <script>
+            
+            var persona = {nombre: "Maria", apellido: "Lopez", edad: 19, estado: "Soltera"}
+           
+            var persona2 = {nombre: "José", apellido: "Lopez", edad: 24, estado: "Viudo"}
+            
+            var persona3 = {nombre: "Ramón", apellido: "Lopez", edad: 22, estado: "Casado"}
+            
+            document.getElementById("persom").innerHTML = persona.nombre + " " + persona.apellido;
+            document.getElementById("edad").innerHTML = persona.edad;
+            document.getElementById("civil").innerHTML = persona.estado;
+            
+            document.getElementById("persom2").innerHTML = persona2.nombre + " " + persona2.apellido;
+            document.getElementById("edad2").innerHTML = persona2.edad;
+            document.getElementById("civil2").innerHTML = persona2.estado;
+            
+            document.getElementById("persom3").innerHTML = persona3.nombre + " " + persona3.apellido;
+            document.getElementById("edad3").innerHTML = persona3.edad;
+            document.getElementById("civil3").innerHTML = persona3.estado;
+            
+        </script>
+              
+    </body>
+
+</html>

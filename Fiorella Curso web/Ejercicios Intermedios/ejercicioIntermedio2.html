@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+    
+             <meta charset="UTF-8">
+        
+    </head>
+    
+    <body>
+        
+        <h1>¡Dias Hasta Navidad!</h1>
+            
+        <p id="demo"></p>
+        
+        <script>
+            
+            var navidad= new Date("12/25/2018 00:00 AM");
+            var segundo = 1000;
+            var minuto = segundo * 60;
+            var hora = minuto * 60;
+            var dia = hora * 24;
+            var timer;
+            
+            function cuentaAtras() {
+        
+                var hoy = new Date();
+                var tiempo = navidad - hoy;
+                var dias = Math.floor(tiempo / dia);
+                var horas = Math.floor((tiempo % dia) / hora);
+                var minutos = Math.floor((tiempo % hora) / minuto);
+                var segundos = Math.floor((tiempo % minuto) / segundo);
+                
+                if (dias > 0) {
+                
+                texto = "Faltan " + dias + " dias para Navidad"
+                
+                } else {
+                    
+                    texto = "Hoy es Navidad";
+                
+                }
+                
+                document.getElementById("demo").innerHTML = texto;
+            
+            }
+            
+            timer = setInterval(cuentaAtras, 1000);
+        
+        </script>
+    
+    </body>
+    
+</html>

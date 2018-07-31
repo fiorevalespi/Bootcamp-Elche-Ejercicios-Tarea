@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="UTF-8"> 
+    
+    </head>
+    
+    <body>
+    
+    <h1>Calcula tu operacion</h1>
+        
+        <input type ="number" id="caja1" name="caja1"> y <input type ="number" id="caja2" name="caja2">
+        
+        <br>
+        <br>    
+        
+        <button onclick="sumar()" value="+">Sumar</button>
+        <button onclick="restar()">Restar</button>
+        <button onclick="dividir()">Dividir</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        
+        <p id="resultado"></p>
+        
+        <script>
+    
+        function sumar(){
+        var x= document.getElementById("caja1").value;
+        var y= document.getElementById("caja2").value;
+        document.getElementById("resultado").innerHTML = "El resultado es = " + ( Number(x) + Number(y));
+    }
+    
+        function restar(){
+        var x= document.getElementById("caja1").value;
+        var y= document.getElementById("caja2").value;
+        document.getElementById("resultado").innerHTML = "El resultado es = " + (x - y);
+    }
+    
+                    
+        function dividir(){
+        var x= document.getElementById("caja1").value;
+        var y= document.getElementById("caja2").value;
+        document.getElementById("resultado").innerHTML = "El resultado es = " + (x / y);
+    }
+    
+                    
+        function multiplicar(){
+        var x= document.getElementById("caja1").value;
+        var y= document.getElementById("caja2").value;
+        document.getElementById("resultado").innerHTML = "El resultado es = " + (x * y);
+    }
+    
+                
+        </script>
+
+    </body>
+
+</html>
